@@ -27,7 +27,7 @@ print(movies[idx_movie])
 #Alguna escena de la película + "nombre de la película"
 response = client.images.generate(
   model="dall-e-3",
-  prompt=f"Portada de la película {movies[np.random.randint(idx_movie)]['title']}",
+  prompt=f"Portada de la película {movies[idx_movie]['title']}",
   size="1024x1024",
   quality="standard",
   n=1,
